@@ -1,0 +1,10 @@
+@import "../../sass/variables";
+@import "../../sass/brakepoints";
+@import "../../sass/typographyComponents";
+@import "../../sass/button";
+
+.container img {
+  @include media("<=phone") {
+    max-height: 170px;
+  }
+}

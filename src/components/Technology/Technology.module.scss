@@ -1,0 +1,157 @@
+@import "../../sass/typographyComponents";
+@import "../../sass/brakepoints";
+@import "../../sass/button";
+@import "../../sass/variables";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @include media("<=tablet") {
+    margin-top: 25%;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  @include media("<=phone") {
+    margin-top: 35%;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+}
+.small-container {
+  max-width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  @include media("<=tablet") {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
+.typography-container {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  @include media("<=tablet") {
+    max-width: 60%;
+    align-items: center;
+    max-height: 237px;
+    justify-content: space-between;
+  }
+  @include media("<=tablet") {
+    max-width: 80%;
+    align-items: center;
+    max-height: 177px;
+    justify-content: space-between;
+  }
+}
+.typography-container h3 {
+  @include h3;
+  color: $third;
+  margin: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  @include media("<=tablet") {
+    margin: 5%;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.btn-active {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: $third;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  margin: 5px;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+  border: none;
+  @include media("<=tablet") {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  @include media("<=phone") {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+.btn-inactive {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  margin: 5px;
+  font-size: 32px;
+  line-height: 37px;
+  color: $third;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.318);
+  @include media("<=tablet") {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  @include media("<=phone") {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+.sh2 {
+  @include sh2;
+}
+.h5 {
+  position: absolute;
+  @include h5;
+  top: 20%;
+  left: 10%;
+  @include media("<=tablet") {
+    position: absolute;
+    width: 217px;
+    height: 24px;
+    left: 38.5px;
+    top: 136px;
+  }
+  @include media("<=phone") {
+    position: absolute;
+    width: 176px;
+    height: 19px;
+    left: 100px;
+    top: 88px;
+  }
+}
