@@ -1,0 +1,27 @@
+@import "../../sass/variables";
+@import "../../sass/brakepoints";
+@import "../../sass/typographyComponents";
+@import "../../sass/button";
+
+.bg-img {
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: url("../../materials/starter-code/assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  @include media("<=tablet") {
+    background-image: url("../../materials/starter-code/assets/technology/background-technology-tablet.jpg");
+    overflow: scroll;
+    height: 100%;
+  }
+  @include media("<=phone") {
+    background-image: url("../../materials/starter-code/assets/technology/background-technology-mobile.jpg");
+    overflow: scroll;
+    height: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../sass/brakepoints";
+
+.img-planet {
+  z-index: 1;
+  align-self: center;
+  width: 435px;
+  height: 435px;
+  @include media("<=tablet") {
+    flex-direction: column;
+    width: 205px;
+    height: 205px;
+    margin: 20px;
+  }
+  @include media("<=phone") {
+    flex-direction: column;
+    width: 155px;
+    height: 155px;
+    padding-bottom: 20px;
+  }
+}

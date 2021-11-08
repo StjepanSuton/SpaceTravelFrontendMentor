@@ -1,0 +1,33 @@
+@import "../../sass/typographyComponents";
+@import "../../sass/brakepoints";
+@import "../../sass/button";
+@import "../../sass/variables";
+
+.crew {
+  height: auto;
+  width: 450px;
+  @include media("<=tablet") {
+    height: 572px;
+    width: unset;
+  }
+  @include media("<=phone") {
+    padding-top: 10%;
+    width: 327px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid;
+    border-color: #383b4b;
+  }
+}
+.crew img {
+  @include media("<=tablet") {
+    height: 572px;
+    width: unset;
+  }
+  @include media("<=phone") {
+    width: 177.12px;
+    height: 202px;
+  }
+}

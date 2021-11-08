@@ -1,0 +1,107 @@
+@import "../../sass/variables";
+@import "../../sass/brakepoints";
+@import "../../sass/typographyComponents";
+@import "../../sass/button";
+.container {
+  z-index: 3;
+  min-width: 100%;
+  position: absolute;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  @include media("<=tablet") {
+    top: 0px;
+  }
+  @include media("<=phone") {
+    justify-content: space-around;
+    top: 3%;
+  }
+}
+
+.logo {
+  margin-left: 45px;
+  @include media("<=phone") {
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    margin-left: 0px;
+  }
+}
+
+.hamburger {
+  left: 10%;
+}
+
+.this-line {
+  z-index: 3;
+  position: sticky;
+  width: 403px;
+  height: 1px;
+  left: 107px;
+  background: $third;
+  opacity: 0.25;
+  @include media("<=tablet") {
+    max-width: 0px;
+  }
+}
+.container-mobile {
+  align-self: flex-end;
+  z-index: 4;
+  position: absolute;
+  height: 100vh;
+  width: 65%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(35.5485px);
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.container-mobile-out {
+  align-self: flex-end;
+  z-index: 4;
+  position: absolute;
+  height: 100%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(35.5485px);
+  animation-duration: 1s;
+  opacity: 0;
+  width: 0px;
+  transition: all 1s ease;
+  animation-name: slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
+
+.bigX {
+  align-self: flex-end;
+  padding: 15%;
+  padding-bottom: 20%;
+}

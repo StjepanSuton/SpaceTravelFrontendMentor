@@ -1,0 +1,125 @@
+@import "variables";
+@import "../sass/brakepoints";
+
+@mixin h1 {
+  font-weight: normal;
+  margin: 0;
+  line-height: 172px;
+  color: $secondary;
+  font-size: $h1-font-size;
+  font-family: $belfair;
+  @include media("<=tablet") {
+    font-size: 120px;
+  }
+  @include media("<=phone") {
+    font-size: 80px;
+  }
+}
+@mixin h2 {
+  font-weight: normal;
+  margin: 0;
+  color: $secondary;
+  font-size: $h2-font-size;
+  font-family: $belfair;
+  @include media("<=tablet") {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  @include media("<=phone") {
+    font-size: 50px;
+    line-height: 59px;
+  }
+}
+@mixin h3 {
+  font-weight: normal;
+  margin: 0;
+  line-height: 64px;
+  color: $secondary;
+  font-size: $h3-font-size;
+  font-family: $belfair;
+  @include media("<=tablet") {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  @include media("<=phone") {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@mixin h4 {
+  font-weight: normal;
+  margin: 0;
+  color: $secondary;
+  font-size: $h4-font-size;
+  font-family: $belfair;
+  @include media("<=tablet") {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @include media("<=phone") {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@mixin h5 {
+  font-weight: normal;
+  margin: 0;
+  color: $secondary;
+  font-size: $h5-font-size;
+  font-family: $barlow;
+  letter-spacing: $h5-cs;
+  line-height: 34px;
+  @include media("<=tablet") {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  @include media("<=phone") {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+}
+@mixin sh1 {
+  font-weight: normal;
+  margin: 0;
+  color: $secondary;
+  font-size: $sh1-font-size;
+  font-family: $belfair;
+}
+@mixin sh2 {
+  font-weight: normal;
+  margin: 0;
+  color: $secondary;
+  font-size: $sh1-font-size;
+  font-family: $barlow;
+  letter-spacing: $sh2-cs;
+  @include media("<=tablet") {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@mixin nav {
+  font-weight: normal;
+  margin: 0;
+  color: $secondary;
+  font-size: $nav-font-size;
+  font-family: $barlow;
+  letter-spacing: $nav-cs;
+}
+@mixin p {
+  font-weight: normal;
+  margin: 0;
+  font-size: $p-font-size;
+  color: $secondary;
+  font-family: $barlow;
+  line-height: 32px;
+  @include media("<=tablet") {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  @include media("<=phone") {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

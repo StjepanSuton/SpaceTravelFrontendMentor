@@ -1,0 +1,26 @@
+@import "../sass/variables";
+@import "../sass/brakepoints";
+
+@mixin btn {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  @include nav;
+  &:hover {
+    border-bottom: solid;
+    border-color: $third;
+    opacity: 0.3;
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+  &:active {
+    border-bottom: solid;
+    border-color: $third;
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+}
