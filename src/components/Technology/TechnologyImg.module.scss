@@ -4,7 +4,12 @@
 @import "../../sass/button";
 
 .container img {
+  @include media("<=tablet") {
+    min-height: 310px;
+    max-height: 310px;
+  }
   @include media("<=phone") {
     max-height: 170px;
+    min-height: 170px;
   }
 }
